@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+/* GENERALES */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	background-color: #ffffff;
+}
+
+/*.contenedor {
+	width: 100%;
+	margin: 70px auto;
+}*/
+/* CIERRE GENERALES */
+
+/* COMIENZO INFORMACIÓN NAV */
+.informacion {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #D49E4A;
+	padding: 15px;
+}
+
+.informacion img {
+	max-width: 25px;
+	width: 100%;
+}
+
+.informacion span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.informacion span a {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.informacion span a:hover {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* COMIENZO NAVEGACIÓN */
+.hamburguesa {
+	border: none;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.hamburguesa span {
+	background-color: #ffffff;
+	display: block;
+	height: 3px;
+	width: 28px;
+	margin: 10px auto;
+	border-radius: 2px;
+}
+.menu img {
+	width: 160px;
+	max-width: 160px;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: #ffffff;
+	background-color: #3d3d3d;
+}
+
+.menu .navegacion {
+	display: flex;
+	padding: 0;
+}
+
+.menu .navegacion li {
+	padding: 5px 20px;
+	list-style-type: none;
+	transition: 0.7s;
+	cursor:  pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.menu .navegacion .vende {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #61C4CD;
+	border-radius: 25px;
+	margin: 0 2px;
+}
+
+.menu .navegacion .vende:hover {
+	background-color: #61C4CD;
+}
+
+.menu .navegacion .compro {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #c84b31;
+	border-radius: 25px;
+	margin: 0 2px;
+}
+
+.menu .navegacion .compro:hover  {
+	background-color: #c84b31;
+}
+
+.menu .navegacion li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.menu .navegacion li:hover {
+	background-color: #D49E4A;
+}
+/* CIERRE NAVEGACIÓN */
+
+/* COMIENZO ANIMACIÓN HAMBURGUESA */
+@keyframes muestraMenu{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+.menu .navegacion.activado {
+	display: flex;
+	animation: muestraMenu 300ms ease-in-out both;
+}
+
+.br-1.animado {
+	transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+	opacity: 0;
+}
+
+.br-3.animado {
+	transform: rotate(45deg) translate(-10px, -8px);
+}
+/* CIERRE ANIMACIÓN HAMBURGUESA */
+
+.menu .botones-nav {
+	margin: 2% auto;
+	display: flex;
+}
+
+/* CIERRE INFORMACIÓN NAV */
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 70%;
+	margin: 100px auto;
+}
+
+.video-home video {
+	width: 100%;
+}
+/* CIERRE VIDEO */
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+	width: 100%;
+	margin: 100px auto;
+	background-color: #3d3d3d;
+}
+
+/* Slideshow container */
+.caja-slideshow .slideshow {
+  	width: 70%;
+  	background-color: #3d3d3d;
+  	position: relative;
+  	margin: auto;
+}
+
+.slideshow .slider {
+	background-color: #3d3d3d;
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slideshow .slider p {
+	width: 70%;
+	margin: 40px auto;
+	text-align: center;
+	color:#ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+}
+
+.slideshow .slider p span {
+	color:#61C4CD;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Next previus and button */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -26px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #61C4CD;
+}
+
+.slider h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	color: #D49E4A;
+}
+
+/* Caption texto */
+.slider .texto {
+  color: #D49E4A;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 50px;
+  width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Number text (1/3 etc) 
+.slider .numero-texto {
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  color:#e6e6e6;
+	font-family: 'Roboto Condensed', sans-serif;
+}*/
+
+/* The dots/bullets/indicators */
+.circulos {
+	width: 70%;
+	margin:  auto;
+	text-align: center;
+	padding:  1%;
+}
+
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #61C4CD;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ .active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* COMIENZO ANIMACIÓN FADE */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*CIERRE ANIMACIÓN FADE */
+/* CIERRE SLIDESHOW */
+
+/* COMIENZO SIGUENOS */
+/*.siguenos {
+	width:  1140px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 70px auto;
+}
+
+.siguenos img {
+	width: 100%;
+	max-width: 60px;
+}
+
+.siguenos strong {
+	padding: 0 10px;
+	color:#3d3d3d;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif !important;
+}*/
+
+/* CIERRE SIGUENOS */
+
+/* COMIENZO FORMULARIO CONTACTO */
+#formulario-contacto {
+	width: 70%;
+	margin: 70px auto;
+	background-image: url(../img/car3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 70%;
+	max-width: 70%;
+	padding: 20px 0;
+}
+
+.contacto h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	color:  #262626;
+	text-align: center;
+}
+
+.contacto label {
+	margin-top: 20px;
+	margin-left: 125px;
+	color: #ffffff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 600;
+	font-size:  1.1em;
+}
+
+.contacto input {
+	font-family:  'Roboto', sans-serif;
+	padding: 10px;
+	width: 70%;
+	margin:  5px auto;
+	outline: none;
+	border: none;
+	background-color: #ffffff;
+}
+
+.contacto input:hover {
+	outline: 2px solid #c84b31;
+}
+
+.contacto textarea {
+	font-family:  'Roboto', sans-serif;
+	border: none;
+	outline:  none;
+	padding: 5px;
+	width: 70%;
+	min-height: 150px;
+	max-height: 170px;
+	margin:  5px auto;
+	background-color: #ffffff;
+}
+
+.contacto textarea:hover {
+	outline: 2px solid #c84b31;
+}
+
+::placeholder {
+	color: #3d3d3d;
+}
+
+#boton {
+	margin-left: 115px;
+	padding: 10px;
+	width: 20%;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	color: #3d3d3d;
+	text-align: left;
+	background-color:  #61C4CD;
+	font-family:  'Roboto', sans-serif;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+#boton:hover {
+	background-color:  rgba(97,196,205,0.7);
+	cursor: pointer;
+	transition: 0.7s all;
+}
+/* CIERRE FORMULARIO CONTACTO */
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    padding: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-left: 115px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    /*background-color: #3d3d3d;*/
+    width: 70%;
+    color: #fff;
+    font-size: 1.1em;
+    text-align: left;
+    position: relative;
+    
+}
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.cierrame {
+    position: absolute;
+    right:10px;
+    top: 20px;
+    cursor:pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.oculto {
+    display: none;
+}
+/* CIERRE RESPUESTA DE FORMULARIO */
+
+/* COMIENZO CONTÁCTANOS */
+
+/* CIERRE CONTÁCTANOS */
+
+/* COMIENZO SECCIÓN VENDE TU AUTO */
+.vendo-auto {
+	width: 100%;
+	background-color: #3d3d3d;
+	margin: 100px auto;
+}
+
+.vendo-auto h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 30px 95px;
+	text-align: left;
+	color: #61C4CD;
+	font-size: 2.5em;
+}
+
+.vendo-auto p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	text-align: left;
+	color: #ffffff;
+	margin: 0 100px;
+}
+
+.vendo-auto .info-vender {
+	width: 70%;
+	padding: 30px;
+	margin: auto;
+	position: relative;
+}
+
+.vendo-auto .info-vender img {
+	width: 40px;
+	max-width: 40px;
+	margin: 0 15px;
+}
+
+.vendo-auto .info-vender .paso1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	text-align: left;
+	top: 90px;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	font-size: 1em;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #61C4CD;
+}
+
+.vendo-auto .info-vender .paso2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 215px;	
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	font-size: 1em;
+	position: absolute;
+	top: 245px;	
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #61C4CD;
+}
+
+.vendo-auto .info-vender .paso3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 335px;	
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	font-size: 1em;
+	position: absolute;
+	top: 365px;	
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #61C4CD;
+}
+/* CIERRE SECCIÓN VENDE TU AUTO */
+
+/* COMIENZO SECCIÓN COMPRO TU AUTO */
+.compro-auto {
+	width: 100%;
+	background-color: #3d3d3d;
+	margin: 100px auto;
+}
+
+.compro-auto .compro {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 30px 95px;
+	text-align: left;
+	color: #C83B31;
+	font-size: 2.5em;
+}
+
+.compro-auto p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	text-align: left;
+	color: #ffffff;
+	margin: 0 100px;
+}
+
+.compro-auto .info-comprar {
+	width: 70%;
+	padding: 30px;
+	margin: auto;
+	position: relative;
+}
+
+.compro-auto .info-comprar img {
+	width: 40px;
+	max-width: 40px;
+	margin: 0 15px;
+}
+
+.compro-auto .info-comprar .paso1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 90px;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	font-size: 1em;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c83b31;
+}
+
+.compro-auto .info-comprar .paso2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 220px;	
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	font-size: 1em;
+	position: absolute;
+	top: 250px;	
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c83b31;
+}
+
+.info-comprar .paso3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 345px;	
+}
+
+.info-comprar .contexto-paso3{
+	position: absolute;
+	top: 375px;	
+	left: 0;
+	color: #ffffff;
+	font-size: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c83b31;
+}
+
+.info-comprar .paso4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	position: absolute;
+	top: 470px;
+}
+
+.info-comprar .contexto-paso4{
+	font-size: 1em;
+	position: absolute;
+	top: 500px;	
+	left: 0;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c83b31;
+}
+/* CIERRE SECCIÓN COMPRO TU AUTO */
+
+/* COMIEZO SECCIÓN QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+	background-color: #3d3d3d;
+	margin: 100px auto;
+}
+
+.quienes-somos h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 30px 95px;
+	text-align: left;
+	color: #FFFFFF;
+	font-size: 2.5em;
+}
+
+.quienes-somos .contexto-eduardo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	text-align: justify;
+	color: #ffffff;
+	margin: 0 100px;
+}
+
+.quienes-somos p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	text-align: left;
+	color: #ffffff;
+	margin: 0 100px;
+}
+
+.quienes-somos .historia {
+	width: 70%;
+	margin: auto;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	}
+
+.quienes-somos .historia img {
+	width: 100%;
+	max-width: 500px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 50%;
+}
+
+.quienes-somos .historia .texto p {
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	color: #ffffff;
+	margin: 0;
+	padding: 0 25px
+}
+/* CIERRE SECCIÓN QUIENES SOMOS */
+
+/* PÁGINA COMIENZO FAQ */
+.faq {
+	width: 100%;
+	margin: 100px auto;
+	background-color: #3d3d3d;
+}
+
+.faq h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 30px 95px;
+	text-align: left;
+	color: #ffffff;
+	font-size: 2.5em;
+}
+
+.faq .caja-faq {
+	width: 70%;
+	margin:  auto;
+	padding: 30px;
+	background-color: #3d3d3d;
+}
+
+.faq .accordion {
+	background-color: #3d3d3d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  transition: 0.4s;
+  font-family: 'Roboto Condensed', sans-serif;
+	color:  #ffffff;
+}
+
+/*.faq .active, .accordion:hover {
+  background-color: #3c8dad;
+  color:  #e6e6e6;
+}*/
+
+.faq .accordion:after {
+  content: '\002B';
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq .active:after {
+  content: "\2212";
+}
+
+.faq .panel {
+  padding: 0 18px;
+  /*background-color: #e6e6e6;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom:  1px solid #ffffff;
+}
+
+.faq .panel p {
+	padding: 5px;
+	color: #ededed;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em; 
+}
+
+.faq .panel p a {
+	color: #61C4CD;
+	text-decoration: none;
+}
+
+.faq .panel p span a {
+	color: #c83b31;
+	text-decoration: none;
+}
+/* CIERRE PÁGINA FAQ */
+
+/* COMIENZO FOOTER */
+footer.pie {
+	background-color: #3d3d3d;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+}
+
+.row{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+
+article.pie-pagina  {
+	width: 65%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+.contactanos {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;	
+}
+
+.contactanos h2 {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: left;
+}
+
+.contactanos img {
+	width: 100%;
+	max-width: 25px;
+	vertical-align: top;
+}
+
+.contactanos i {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	font-weight: 500;
+	font-style: normal;
+	color: #61C4CD;
+	padding: 10px;
+	}
+
+.contactanos span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #D49E4A;
+}
+
+.contactanos span a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.contactanos span a:hover{
+	text-decoration: underline;
+}
+
+/* CIERRE FOOTER */
+
+/* BOTON PARA DIRIGIRSE HACIA ARRIBA */
+#boton-arriba {
+	transform: scale(0);
+	position: fixed;
+	bottom: 50%;
+	right: 15px;
+	transition: 0.5s all;
+}
+
+#boton-arriba .fa-chevron-circle-up {
+	color: #CFA56B;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.content-whatsapp img {
+	width: 100%;
+	max-width: 50px;
+}
+

@@ -1,0 +1,1840 @@
+/* MEDIA QUERY */
+/* COMIENZO DISPOSITIVOS 320PX - 480PX */
+@media screen and (min-width: 320px) and (max-width: 479px){
+/* INFORMACIÓN NAV */
+.informacion {
+	width: 100%;
+	display: flex;
+	flex-direction: column !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.informacion img {
+	display: none;
+}
+
+.informacion span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding: 5px;
+}
+
+ /* MENÚ */
+.hamburguesa {
+	display:  block;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	background-color: transparent;
+}
+.menu {
+	width: 100% !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start !important;
+	padding: 25px 0;
+}
+.menu img {
+	width: 100%;
+}
+
+.menu .navegacion {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	/*height: 100vh;*/
+	display: none;
+	opacity: 0;
+}
+
+.menu .navegacion li {
+	width: 100%;
+	text-align: center;	
+}
+
+.menu .navegacion .vende {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .navegacion .compro {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .botones-nav {
+	margin: 2% auto;
+	display: flex !important;
+}
+
+.menu .botones-nav .vende {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #61C4CD;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px;
+}
+
+.menu .botones-nav .vende a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .vende:hover {
+	background-color: #61C4CD;
+}
+
+.menu .botones-nav .compro {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #c84b31;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px; 
+}
+
+.menu .botones-nav .compro a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .compro:hover {
+	background-color: #c84b31;
+}
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 97% !important;
+}
+
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+ width: 100%;
+ height: 400px;
+ min-height: 400px;
+ max-height: 400px;
+ display: none;
+}
+
+.slideshow .slider {
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slider .texto {
+  bottom: 25px !important;
+}
+
+.circulos {
+	margin: 140px auto !important;
+}
+
+/*.siguenos {
+	width:  100%;	
+}*/
+
+/* VENDER AUTO */
+.vendo-auto {
+	width: 100%;
+}
+
+.vendo-auto .info-vender {
+	width: 100% !important;
+	height: 520px !important;
+}
+
+.vendo-auto h1 {
+	font-size: 2em !important;
+}
+
+.vendo-auto p {
+	font-size: 0.9em !important;
+}
+
+.vendo-auto .info-vender img {
+	max-width: 40px;
+	display: none;
+}
+
+.vendo-auto .info-vender .paso1 {
+	font-size: 0.9em !important;
+	top:20px !important;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	top: 60px !important;
+	font-size: 0.8em !important;
+}
+
+.vendo-auto .info-vender .paso2 {
+	font-size: 0.9em !important;
+	top: 180px !important;
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	top: 225px !important;
+	font-size: 0.8em !important;
+}
+
+.vendo-auto .info-vender .paso3 {
+	font-size: 0.9em !important;
+	top: 360px !important;
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	top: 405px !important;
+	font-size: 0.8em !important;
+}
+
+/* COMPRAR AUTO */
+.compro-auto {
+	width: 100%;
+}
+
+.compro-auto .info-comprar {
+	width: 100% !important;
+	height: 660px !important;
+}
+
+.compro-auto .compro {
+	font-size: 2em !important;
+}
+
+.compro-auto .info-comprar img {
+	max-width: 40px;
+	display: none;
+}
+
+.compro-auto .info-comprar .paso1 {
+	font-size: 0.9em !important;
+	top:30px !important;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	top:80px !important;
+	font-size: 0.8em !important;
+}
+
+.compro-auto .info-comprar .paso2 {
+	font-size: 0.9em !important;
+	top: 185px !important;
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	top: 235px !important;
+	font-size: 0.8em !important;	
+}
+
+.compro-auto .info-comprar .paso3 {
+	font-size: 0.9em !important;
+	top: 355px;
+}
+
+.compro-auto .info-comprar .contexto-paso3{
+	top: 405px;
+	font-size: 0.8em !important;
+}
+
+.compro-auto .info-comprar .paso4 {
+	font-size: 0.9em !important;
+	top: 525px;
+}
+
+.compro-auto .info-comprar .contexto-paso4{
+	top: 575px;
+	font-size: 0.8em !important;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+}
+
+.quienes-somos h1 {
+	font-size: 2em !important;
+}
+
+.quienes-somos .contexto-eduardo {
+	text-align: left !important;
+}
+
+.quienes-somos .historia {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.quienes-somos .historia img {
+	max-width: 500px;
+	padding-bottom: 10px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 100% !important;
+}
+
+.quienes-somos .historia .texto p {
+	font-family: 'Roboto', sans-serif;
+	text-align: left !important;
+}
+
+/* FORMULARIO */
+#formulario-contacto {
+	width: 97% !important;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+}
+
+.contacto h2 {
+	font-size: 1.4em;
+}
+
+.contacto label {
+	color: #262626;
+	margin-left: 0 !important;
+	font-weight: 600;
+	text-align: center;
+}
+
+.contacto input {
+	width: 100% !important;
+}
+
+.contacto textarea {
+	width: 100% !important;
+}
+
+#boton {
+	margin-left: 0 !important;
+	width: 40% !important;
+}
+/* CIERRE FORMULARIO CONTACTO */
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    margin-left: 0 !important;
+    width: 100% !important;
+    color: #fff;
+    font-size: 0.8em !important;
+}
+
+.cierrame {
+    right:10px;
+    top: 20px !important;
+}
+
+/* FAQ */
+.faq .caja-faq {
+	width: 100% !important;
+	padding: 2%;
+}
+
+.faq h1 {
+	font-size: 2em !important;
+}
+
+/* FOOTER  */
+.pie {
+	width: 100%;
+}
+
+.row{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactanos {
+	width: 100% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.contactanos h2 {
+	font-size: 1.1em !important;
+	text-align: center;
+}
+
+.contactanos i {
+	font-size: 1em !important;
+}
+
+.contactanos span {
+	font-size: 1em !important;
+}
+
+article.pie-pagina  {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 0.8em !important;
+	padding-top: 30px;
+}
+
+/* BOTON ARRIBA */
+#boton-arriba .fa-chevron-circle-up {
+	font-size: 40px !important;
+}
+}
+/* TERMINO DISPOSITIVOS 320PX - 480PX */
+
+/* COMIENZO DISPOSITIVOS 480PX - 575PX */
+@media screen and (min-width: 480px) and (max-width: 575px){
+/* INFORMACIÓN NAV */
+.informacion {
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.informacion img {
+	font-size: 20px;
+}
+
+.informacion span {
+	font-size: 1em !important;
+}
+
+/* MENÚ */
+.menu img {
+	width: 100%;
+}
+
+.hamburguesa {
+	display:  block;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	background-color: transparent;
+}
+
+.menu {
+	width: 100% !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start !important;
+	padding: 25px 0;
+}
+
+.menu .navegacion {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	/*height: 100vh;*/
+	display: none;
+	opacity: 0;
+}
+
+.menu .navegacion li {
+	width: 100%;
+	text-align: center;	
+}
+
+.menu .navegacion .vende {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .navegacion .compro {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .botones-nav {
+	margin: 2% auto;
+	display: flex;
+}
+
+.menu .botones-nav .vende {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #61C4CD;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px;
+}
+
+.menu .botones-nav .vende a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .vende:hover {
+	background-color: #61C4CD;
+}
+
+.menu .botones-nav .compro {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #c84b31;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px; 
+}
+
+.menu .botones-nav .compro a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .compro:hover {
+	background-color: #c84b31;
+}
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 90% !important;
+}
+
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+ width: 100%;
+ height: 400px;
+ min-height: 400px;
+ max-height: 400px;
+}
+
+.slideshow .slider {
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slider .texto {
+  bottom: 25px !important;
+}
+
+.circulos {
+	margin: 140px auto !important;
+}
+
+/*.siguenos {
+	width:  100%;	
+}*/
+
+/* VENDER AUTO */
+.vendo-auto {
+	width: 100%;
+}
+
+.vendo-auto .info-vender {
+	width: 100% !important;
+}
+
+.vendo-auto h1 {
+	font-size: 2.2em !important;
+}
+
+.vendo-auto p {
+	font-size: 1em !important;
+}
+
+.vendo-auto .info-vender img {
+	max-width: 40px;
+}
+
+.vendo-auto .info-vender .paso1 {
+	font-size: 1em;
+	top:90px;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	top: 140px !important;
+}
+
+.vendo-auto .info-vender .paso2 {
+	font-size: 1em;
+	top: 210px;
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	top: 265px !important;
+}
+
+.vendo-auto .info-vender .paso3 {
+	font-size: 1em;
+	top: 335px;
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	top: 385px !important;
+}
+
+/* COMPRAR AUTO */
+.compro-auto {
+	width: 100%;
+}
+
+.compro-auto .info-comprar {
+	width: 100% !important;
+}
+
+.compro-auto .compro {
+	font-size: 2.2em !important;
+}
+
+.compro-auto .info-comprar img {
+	max-width: 40px;
+}
+
+.compro-auto .info-comprar .paso1 {
+	font-size: 1em;
+	top:90px !important;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	top:150px !important;
+	font-size: 0.9em;
+}
+
+.compro-auto .info-comprar .paso2 {
+	font-size: 1em;
+	top: 220px;
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	top: 280px !important;	
+}
+
+.compro-auto .info-comprar .paso3 {
+	font-size: 1em;
+	top: 345px;
+}
+
+.compro-auto .info-comprar .contexto-paso3{
+	top: 395px;
+}
+
+.compro-auto .info-comprar .paso4 {
+	font-size: 1em;
+	top: 470px;
+}
+
+.compro-auto .info-comprar .contexto-paso4{
+	top: 520px;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+}
+
+.quienes-somos h1 {
+	font-size: 2.2em !important;
+}
+
+.quienes-somos .historia {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.quienes-somos .historia img {
+	max-width: 500px;
+	padding-bottom: 10px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 100% !important;
+}
+
+.quienes-somos .historia .texto p {
+	font-family: 'Roboto', sans-serif;
+	text-align: left !important;
+}
+
+/* FORMULARIO */
+#formulario-contacto {
+	width: 90% !important;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+}
+
+.contacto h2 {
+	font-size: 1.4em;
+}
+
+.contacto label {
+	color: #262626;
+	margin-left: 0 !important;
+	font-weight: 600;
+	text-align: center;
+}
+
+.contacto input {
+	width: 100% !important;
+}
+
+.contacto textarea {
+	width: 100% !important;
+}
+
+#boton {
+	margin-left: 0 !important;
+	width: 30% !important;
+}
+/* CIERRE FORMULARIO CONTACTO */
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    margin-left: 0 !important;
+    width: 100% !important;
+    color: #fff;
+    font-size: 0.9em !important;
+}
+
+.cierrame {
+    right:10px;
+    top: 15px !important;
+}
+
+.quienes-somos .contexto-eduardo {
+	text-align: left !important;
+}
+
+/* FAQ */
+.faq .caja-faq {
+	width: 100% !important;
+	padding: 2%;
+}
+
+.faq h1 {
+	font-size: 2.2em !important;
+}
+
+/* FOOTER  */
+.pie {
+	width: 100%;
+}
+
+.row{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactanos {
+	width: 100% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.contactanos h2 {
+	font-size: 1.2em !important;
+	text-align: center;
+}
+
+.contactanos i {
+	font-size: 1.1em !important;
+}
+
+.contactanos span {
+	font-size: 1.1em !important;
+}
+
+article.pie-pagina  {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 0.9em !important;
+	padding-top: 30px;
+}
+
+/* BOTON ARRIBA */
+#boton-arriba .fa-chevron-circle-up {
+	font-size: 40px !important;
+}
+}
+/* CIERRE DISPOSITIVOS 480PX - 575PX */
+
+/* COMIENZO DISPOSITIVOS 576PX - 767PX */
+@media screen and (min-width: 576px) and (max-width: 767px){
+/* INFORMACIÓN NAV */
+.informacion {
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+}
+
+/* MENÚ */
+.hamburguesa {
+	display:  block;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	background-color: transparent;
+}
+
+.menu {
+	width: 100% !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start !important;
+	padding: 25px 0;
+}
+.menu img {
+	width: 100%;
+}
+
+.menu .navegacion {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/*height: 100vh;*/
+	display: none;
+	opacity: 0;
+}
+
+.menu .navegacion li {
+	width: 100%;
+	text-align: center;
+}
+
+.menu .navegacion .vende {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .navegacion .compro {
+	/*margin: 2px 0;*/
+	display:  none;
+}
+
+.menu .botones-nav {
+	margin: 2% auto;
+	display: flex;
+}
+
+.menu .botones-nav .vende {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #61C4CD;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px;
+}
+
+.menu .botones-nav .vende a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .vende:hover {
+	background-color: #61C4CD;
+}
+
+.menu .botones-nav .compro {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #c84b31;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px; 
+}
+
+.menu .botones-nav .compro a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .compro:hover {
+	background-color: #c84b31;
+}
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 85% !important;
+}
+
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+ width: 100%;
+ height: 350px;
+ min-height: 350px;
+ max-height: 350px;
+}
+
+.slideshow .slider {
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slider .texto {
+  bottom: 25px !important;
+}
+
+.circulos {
+	margin: 90px auto !important;
+}
+
+/* VENDER AUTO */
+.vendo-auto {
+	width: 100%;
+}
+
+.vendo-auto .info-vender {
+	width: 100% !important;
+}
+
+.vendo-auto h1 {
+	font-size: 2.3em !important;
+}
+
+.vendo-auto p {
+	font-size: 1.1em !important;
+}
+
+.vendo-auto .info-vender img {
+	max-width: 40px;
+}
+
+.vendo-auto .info-vender .paso1 {
+	font-size: 1em;
+	top:90px;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	top: 120px;
+}
+
+.vendo-auto .info-vender .paso2 {
+	font-size: 1em;
+	top: 210px;
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	top: 240px;
+}
+
+.vendo-auto .info-vender .paso3 {
+	font-size: 1em;
+	top: 335px;
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	top: 390px !important;
+}
+
+/* COMPRAR AUTO */
+.compro-auto {
+	width: 100%;
+}
+
+.compro-auto .info-comprar {
+	width: 100% !important;
+}
+
+.compro-auto .compro {
+	font-size: 2.3em !important;
+}
+
+.compro-auto .info-comprar img {
+	max-width: 40px;
+}
+
+.compro-auto .info-comprar .paso1 {
+	font-size: 1em;
+	top:90px;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	top: 150px !important;
+}
+
+.compro-auto .info-comprar .paso2 {
+	font-size: 1em;
+	top: 220px;
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	top: 280px !important;
+}
+
+.compro-auto .info-comprar .paso3 {
+	font-size: 1em;
+	top: 345px;
+}
+
+.compro-auto .info-comprar .contexto-paso3{
+	top: 397px !important;
+}
+
+.compro-auto .info-comprar .paso4 {
+	font-size: 1em;
+	top: 470px;
+}
+
+.compro-auto .info-comprar .contexto-paso4{
+	top: 520px;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+}
+
+.quienes-somos h1 {
+	font-size: 2.3em !important;
+}
+
+.quienes-somos .contexto-eduardo {
+	text-align: justify !important;
+	color: #ffffff;
+
+}
+
+.quienes-somos .historia {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.quienes-somos .historia img {
+	max-width: 500px;
+	padding-bottom: 10px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 100% !important;
+}
+
+.quienes-somos .historia .texto p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* FORMULARIO */
+#formulario-contacto {
+	width: 85% !important;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+}
+
+.contacto h2 {
+	font-size: 1.4em;
+}
+
+.contacto label {
+	color: #262626;
+	margin-left: 0 !important;
+	font-weight: 600;
+}
+
+.contacto input {
+	width: 100% !important;
+}
+
+.contacto textarea {
+	width: 100% !important;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#boton {
+	margin-left: 0 !important;
+	width: 30% !important;
+	min-width: 30%;
+	max-width: 30%;
+}
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    margin-left: 0 !important;
+    width: 100% !important;
+    color: #fff;
+    font-size: 1em;
+}
+
+.cierrame {
+    right:10px;
+    top: 18px !important;
+}
+
+/* FAQ */
+.faq .caja-faq {
+	width: 100% !important;
+	padding: 2%;
+}
+
+.faq h1 {
+	font-size: 2.3em !important;
+}
+
+/* FOOTER  */
+.pie {
+	width: 100%;
+}
+
+.row{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactanos {
+	width: 100% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.contactanos h2 {
+	font-size: 1.3em !important;
+	text-align: center;
+}
+
+.contactanos i {
+	font-size: 1.2em !important;
+}
+
+.contactanos span {
+	font-size: 1.2em !important;
+}
+
+article.pie-pagina  {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 1em;
+	padding-top: 30px;
+}
+
+/* BOTON ARRIBA */
+#boton-arriba .fa-chevron-circle-up {
+	font-size: 45px !important;
+}
+}
+/* CIERRE DISPOSITIVOS 576PX - 767PX */
+
+/* COMIENZO TABLET 768PX - 1023PX */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+/* MENÚ */
+.hamburguesa {
+	display:  block;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	background-color: transparent;
+}
+/* INFORMACIÓN NAV */
+.informacion {
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	width: 100% !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start !important;
+	padding: 25px 0;
+}
+.menu img {
+	width: 100%;
+}
+
+.menu .navegacion {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/*height: 100vh;*/
+	display: none;
+	opacity: 0;
+}
+
+.menu .navegacion li {
+	width: 100%;
+	text-align: center;	
+}
+
+.botones-moviles {
+	display: none;
+}
+
+.menu .navegacion .vende {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .navegacion .compro {
+	/*margin: 2px 0;*/
+	display: none;
+}
+
+.menu .botones-nav {
+	margin: 2% auto;
+	display: flex;
+}
+
+.menu .botones-nav .vende {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #61C4CD;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px;
+}
+
+.menu .botones-nav .vende a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .vende:hover {
+	background-color: #61C4CD;
+}
+
+.menu .botones-nav .compro {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #c84b31;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px 20px;
+	margin: 0 2px; 
+}
+
+.menu .botones-nav .compro a {
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 1em;
+}
+
+.menu .botones-nav .compro:hover {
+	background-color: #c84b31;
+}
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 80% !important;
+}
+
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+ width: 100%;
+ height: 335px;
+ min-height: 335px;
+ max-height: 335px;
+}
+
+.slideshow .slider {
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slider .texto {
+  bottom: 30px !important;
+}
+
+.circulos {
+	margin: 70px auto !important;
+}
+
+/* VENDER AUTO */
+.vendo-auto {
+	width: 100%;
+}
+
+.vendo-auto .info-vender {
+	width: 100% !important;
+}
+
+.vendo-auto .info-vender img {
+	max-width: 40px;
+}
+
+.vendo-auto h1 {
+	font-size: 2.3em !important;
+}
+
+.vendo-auto .info-vender .paso1 {
+	font-size: 1.1em;
+	top:90px;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	top: 120px;
+}
+
+.vendo-auto .info-vender .paso2 {
+	font-size: 1.1em;
+	top: 210px;
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	top: 240px;
+}
+
+.vendo-auto .info-vender .paso3 {
+	font-size: 1.1em;
+	top: 335px;
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	top: 365px;
+}
+
+/* COMPRAR AUTO */
+.compro-auto {
+	width: 100%;
+}
+
+.compro-auto .info-comprar {
+	width: 100% !important;
+}
+
+.compro-auto .compro {
+	font-size: 2.3em !important;
+}
+
+.compro-auto .info-comprar img {
+	max-width: 40px;
+}
+
+.compro-auto .info-comprar .paso1 {
+	font-size: 1.1em;
+	top:90px;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	top: 140px;
+}
+
+.compro-auto .info-comprar .paso2 {
+	font-size: 1.1em;
+	top: 220px;
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	top: 250px;
+}
+
+.compro-auto .info-comprar .paso3 {
+	font-size: 1.1em;
+	top: 345px;
+}
+
+.compro-auto .info-comprar .contexto-paso3{
+	top: 375px;
+}
+
+.compro-auto .info-comprar .paso4 {
+	font-size: 1.1em;
+	top: 470px;
+}
+
+.compro-auto .info-comprar .contexto-paso4{
+	top: 500px;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+}
+
+.quienes-somos h1 {
+	font-size: 2.3em !important;
+}
+
+.quienes-somos .historia {
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.quienes-somos .historia img {
+	max-width: 500px;
+	padding-bottom: 10px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 100% !important;
+}
+
+.quienes-somos .historia .texto p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* FORMULARIO */
+#formulario-contacto {
+	width: 80% !important;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+}
+
+.contacto h2 {
+	font-size: 1.5em;
+}
+
+.contacto label {
+	color: #262626;
+	margin-left: 0 !important;
+	font-weight: 600;
+}
+
+.contacto input {
+	width: 100% !important;
+}
+
+.contacto textarea {
+	width: 100% !important;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#boton {
+	margin-left: 0 !important;
+	width: 30% !important;
+}
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    margin-left: 0 !important;
+    width: 100% !important;
+    color: #fff;
+}
+
+.cierrame {
+    right:10px;
+    top: 18px;
+}
+
+.quienes-somos .contexto-eduardo {
+	text-align: justify !important;
+}
+
+/*FAQ */
+.faq .caja-faq {
+	width: 100% !important;
+	padding: 2%;
+}
+
+.faq h1 {
+	font-size: 2.3em !important;
+}
+
+/* FOOTER  */
+.row{
+	width: 72%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.contactanos {
+	width: 45% !important;
+	text-align: left;
+}
+
+.contactanos h2 {
+	font-size: 1.4em !important;
+	text-align: left;
+}
+
+.contactanos i {
+	font-size: 1.3em !important;
+}
+
+.contactanos span {
+	font-size: 1.3em !important;
+}
+
+
+article.pie-pagina  {
+	width: 55%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 1em;
+	padding-top: 30px;
+}
+
+/* BOTON ARRIBA */
+#boton-arriba .fa-chevron-circle-up {
+	font-size: 48px !important;
+}
+}
+/* CIERRE TABLET 768PX - 1023PX */
+
+/* COMIENZO TABLET, NOTEBOOK */
+@media screen and (min-width: 1024px) and (max-width:  1366px){
+.hamburguesa {
+	display:none;
+}
+
+.menu .botones-nav {
+	display: none !important;
+}
+
+.menu {
+	width: 100% !important;
+	display: flex;
+	flex-direction: row;
+	align-items: center !important;
+}
+.menu img {
+	width: 100%;
+}
+
+/* COMIENZO VIDEO */
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO VIDEO */
+.video-home {
+	width: 100%;
+}
+
+.video-home video {
+	width: 100%;
+}
+
+/* COMIENZO SLIDESHOW */
+.caja-slideshow {
+ width: 100%;
+ height: 335px;
+ min-height: 335px;
+ max-height: 335px;
+}
+
+.slideshow .slider {
+	padding: 20px;
+	min-height: 210px;
+	max-height: 210px;
+	height: 210px;	
+}
+
+.slider .texto {
+  bottom: 45px !important;
+}
+
+.circulos {
+	margin: 70px auto !important;
+}
+
+/* VENDER AUTO */
+.vendo-auto {
+	width: 100%;
+}
+
+.vendo-auto .info-vender {
+	width: 100% !important;
+}
+
+.vendo-auto .info-vender img {
+	max-width: 40px;
+}
+
+.vendo-auto .info-vender .paso1 {
+	top:90px;
+}
+
+.vendo-auto .info-vender .contexto-paso1{
+	top: 120px;
+}
+
+.vendo-auto .info-vender .paso2 {
+	top: 210px;
+}
+
+.vendo-auto .info-vender .contexto-paso2{
+	top: 240px;
+}
+
+.vendo-auto .info-vender .paso3 {
+	top: 335px;
+}
+
+.vendo-auto .info-vender .contexto-paso3{
+	top: 365px;
+}
+
+/* COMPRAR AUTO */
+.compro-auto {
+	width: 100%;
+}
+
+.compro-auto .info-comprar {
+	width: 100% !important;
+}
+
+.compro-auto .info-comprar img {
+	max-width: 40px;
+}
+
+.compro-auto .info-comprar .paso1 {
+	top:90px;
+}
+
+.compro-auto .info-comprar .contexto-paso1{
+	top: 140px;
+}
+
+.compro-auto .info-comprar .paso2 {
+	top: 220px;
+}
+
+.compro-auto .info-comprar .contexto-paso2{
+	top: 250px;
+}
+
+.compro-auto .info-comprar .paso3 {
+	top: 345px;
+}
+
+.compro-auto .info-comprar .contexto-paso3{
+	top: 375px;
+}
+
+.compro-auto .info-comprar .paso4 {
+	top: 470px;
+}
+
+.compro-auto .info-comprar .contexto-paso4{
+	top: 500px;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+	width: 100%;
+}
+
+.quienes-somos .historia {
+	width: 100% !important;
+	display: flex;
+	align-items: center;
+}
+
+.quienes-somos .historia img {
+	max-width: 500px;
+} 
+
+.quienes-somos .historia .texto {
+	width: 100%;
+}
+
+/* FORMULARIO */
+#formulario-contacto {
+	width: 95%;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 0;
+}
+
+.contacto h2 {
+	font-size: 1.5em;
+}
+
+.contacto label {
+	color: #262626;
+	margin-left: 0 !important;
+	font-weight: 600;
+}
+
+.contacto input {
+	width: 100% !important;
+}
+
+.contacto textarea {
+	width: 100% !important;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#boton {
+	margin-left: 0 !important;
+	width: 30% !important;
+}
+
+/* COMIENZO RESPUESTA DE FORMULARIO */
+#formulario-contacto .contacto .mensaje-enviado {
+    margin-left: 0 !important;
+    width: 100% !important;
+    color: #fff;
+}
+
+.cierrame {
+    right:10px;
+    top: 20px;
+}
+
+.quienes-somos .contexto-eduardo {
+	text-align: justify !important;
+}
+
+/*FAQ */
+.faq .caja-faq {
+	width: 100% !important;
+	padding: 2%;
+}
+
+/* FOOTER  */
+.row{
+	width: 72%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.contactanos {
+	width: 45%;
+	text-align: left;
+}
+
+.contactanos h2 {
+	font-size: 1.5em !important;
+	text-align: center;
+}
+
+.contactanos i {
+	font-size: 1.4em !important;
+}
+.contactanos span {
+	font-size: 1.4em !important;
+}
+
+
+article.pie-pagina  {
+	width: 55%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+article.pie-pagina small {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 1em;
+	padding-top: 30px;
+}
+}
+
+@media screen and (min-width: 1367px){
+.menu .botones-nav {
+	display: none !important;
+}
+
+.hamburguesa {
+	display:none;
+}
+}
+
+
+
