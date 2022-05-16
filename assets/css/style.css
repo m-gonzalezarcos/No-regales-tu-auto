@@ -853,27 +853,28 @@ article.pie-pagina small {
 
 .contactanos i {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: 500;
 	font-style: normal;
 	color: #61C4CD;
 	padding: 10px;
+	text-align: left;
 	}
 
-.contactanos span {
+.contactanos p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #ffffff;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #D49E4A;
 }
 
-.contactanos span a{
+.contactanos p a{
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.contactanos span a:hover{
+.contactanos p a:hover{
 	text-decoration: underline;
 }
 

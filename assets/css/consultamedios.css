@@ -16,7 +16,7 @@
 
 .informacion span {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #ffffff;
 	padding: 5px;
 }
@@ -376,16 +376,16 @@
 }
 
 .contactanos h2 {
-	font-size: 1.1em !important;
+	font-size: 1em !important;
 	text-align: center;
 }
 
 .contactanos i {
-	font-size: 1em !important;
+	font-size: 0.9 !important;
 }
 
-.contactanos span {
-	font-size: 1em !important;
+.contactanos p {
+	font-size: 0.8em !important;
 }
 
 article.pie-pagina  {
@@ -774,16 +774,16 @@ article.pie-pagina small {
 }
 
 .contactanos h2 {
-	font-size: 1.2em !important;
+	font-size: 1.1em !important;
 	text-align: center;
 }
 
 .contactanos i {
-	font-size: 1.1em !important;
+	font-size: 1em !important;
 }
 
-.contactanos span {
-	font-size: 1.1em !important;
+.contactanos p {
+	font-size: 0.9em !important;
 }
 
 article.pie-pagina  {
@@ -1160,16 +1160,16 @@ article.pie-pagina small {
 }
 
 .contactanos h2 {
-	font-size: 1.3em !important;
+	font-size: 1.2em !important;
 	text-align: center;
 }
 
 .contactanos i {
-	font-size: 1.2em !important;
+	font-size: 1.1em !important;
 }
 
-.contactanos span {
-	font-size: 1.2em !important;
+.contactanos p {
+	font-size: 1em !important;
 }
 
 article.pie-pagina  {
@@ -1535,16 +1535,16 @@ article.pie-pagina small {
 }
 
 .contactanos h2 {
-	font-size: 1.4em !important;
+	font-size: 1.3em !important;
 	text-align: left;
 }
 
 .contactanos i {
-	font-size: 1.3em !important;
+	font-size: 1.2em !important;
 }
 
-.contactanos span {
-	font-size: 1.3em !important;
+.contactanos p {
+	font-size: 1.1em !important;
 }
 
 
@@ -1799,17 +1799,9 @@ article.pie-pagina small {
 }
 
 .contactanos h2 {
-	font-size: 1.5em !important;
+	font-size: 1.4em !important;
 	text-align: center;
 }
-
-.contactanos i {
-	font-size: 1.4em !important;
-}
-.contactanos span {
-	font-size: 1.4em !important;
-}
-
 
 article.pie-pagina  {
 	width: 55%;
